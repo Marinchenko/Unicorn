@@ -1,0 +1,20 @@
+.dws-menu [type="checkbox"]{
+ display: none;
+}
+.dws-menu label.toggleMenu{
+	display: none;
+}
+@media all and (max-width: 800px){
+ .dws-menu{
+  	overflow: hidden;
+ }
+ .dws-menu ul.header__menu {
+ 	display: none;
+ }
+ .dws-menu label.toggleMenu{
+	display: block;
+ }
+  input.toggleMenu:checked ~ ul{
+  	display: block;
+  }
+}
